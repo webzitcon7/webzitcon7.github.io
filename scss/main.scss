@@ -1,14 +1,17 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif !important;
-}
-
 $colorWhite: white;
 $colorBlack: black;
 $colorRed: #fb0035;
 $colorLight:  #b2b2b2; 
+$fontDefult: 'poppins', sans-serif !important;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $fontDefult;
+}
+
+
 
 .container{
     width: 100%;
