@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'poppins', sans-serif !important;
+}
+
+.container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-left: 128px;
+  padding-right: 128px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+header {
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+header .container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .navbar {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+
+header .container .navbar li a {
+  text-decoration: none;
+  color: #b2b2b2;
+}
+
+@media (max-width: 767px) {
+  header .container .navbar {
+    display: none;
+  }
+}
+
+main section.hiro {
+  position: relative;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../files/bg/1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+main section.hiro:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background: #14033b;
+  background: -webkit-gradient(linear, left top, right top, color-stop(43%, #14033b), to(#3d0107));
+  background: linear-gradient(90deg, #14033b 43%, #3d0107 100%);
+  opacity: 0.9;
+}
+
+main section.hiro .container {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+main section.hiro .container h2 {
+  font-family: 'Fira-sans', sans-serif !important;
+  font-size: 2.4rem;
+  color: #b2b2b2;
+  margin-bottom: 10px;
+  line-height: 50px;
+}
+
+main section.hiro .container h2 .are {
+  font-family: 'Fira-sans', sans-serif !important;
+  color: #fb0035;
+  font-size: 3.8rem;
+  font-weight: 800;
+  -webkit-text-stroke: white;
+}
+
+@media (max-width: 767px) {
+  main section.hiro .container h2 .are {
+    font-size: 2.4rem;
+  }
+}
+
+main section.hiro .container h2 span {
+  font-family: 'Fira-sans', sans-serif !important;
+  font-weight: 800;
+  font-size: 3.8rem;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  main section.hiro .container h2 span {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  main section.hiro .container h2 {
+    font-size: 1.4rem;
+  }
+}
+
+main section.hiro h4 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #b2b2b2;
+}
+
+@media (max-width: 767px) {
+  main section.hiro h4 {
+    font-size: 0.8rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
