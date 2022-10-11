@@ -11,8 +11,6 @@ $fontDefult: 'poppins', sans-serif !important;
     font-family: $fontDefult;
 }
 
-
-
 .container{
     width: 100%;
     max-width: 1600px;
@@ -40,8 +38,6 @@ header{
     justify-content: space-between;
     align-items: center;
    
-   
-
     .navbar{
         list-style: none;
         display: flex;
@@ -67,12 +63,10 @@ main{
         min-height: 100vh;
         display: flex;
         align-items: center;
-        background-image: url('../files/bg/1.jpg');
+        background-image: url('../files/bg/4.png');
         background-position: center;
         background-size: cover;
         
-
-
         &:after{
             content: '';
             display: block;
@@ -84,7 +78,7 @@ main{
             z-index: 0;
             // background-color: #12002f;
             background: rgb(20,3,59);
-            background: linear-gradient(90deg, rgba(20,3,59,1) 43%, rgba(61,1,7,1) 100%);
+            background: linear-gradient(90deg, rgba(20,3,59,0.7) 43%, rgba(61,1,7,1) 100%);
             opacity: 0.9;
         }
         .container{
