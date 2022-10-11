@@ -55,6 +55,7 @@ header .container .navbar {
 header .container .navbar li a {
   text-decoration: none;
   color: #b2b2b2;
+  font-weight: 500;
 }
 
 @media (max-width: 767px) {
@@ -87,8 +88,8 @@ main section.hiro:after {
   bottom: 0;
   z-index: 0;
   background: #14033b;
-  background: -webkit-gradient(linear, left top, right top, color-stop(43%, rgba(20, 3, 59, 0.7)), to(#3d0107));
-  background: linear-gradient(90deg, rgba(20, 3, 59, 0.7) 43%, #3d0107 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(43%, rgba(20, 3, 59, 0.8)), to(#5b051d));
+  background: linear-gradient(90deg, rgba(20, 3, 59, 0.8) 43%, #5b051d 100%);
   opacity: 0.9;
 }
 
@@ -99,18 +100,16 @@ main section.hiro .container {
 }
 
 main section.hiro .container h2 {
-  font-family: 'Fira-sans', sans-serif !important;
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   color: #b2b2b2;
   margin-bottom: 10px;
-  line-height: 50px;
+  line-height: 60px;
 }
 
 main section.hiro .container h2 .are {
-  font-family: 'Fira-sans', sans-serif !important;
-  color: #fb0035;
+  color: #fb0052;
   font-size: 3.8rem;
-  font-weight: 800;
+  font-weight: 700;
   -webkit-text-stroke: white;
 }
 
@@ -121,8 +120,7 @@ main section.hiro .container h2 .are {
 }
 
 main section.hiro .container h2 span {
-  font-family: 'Fira-sans', sans-serif !important;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 3.8rem;
   color: white;
 }
@@ -139,15 +137,55 @@ main section.hiro .container h2 span {
   }
 }
 
-main section.hiro h4 {
+main section.hiro .container h4 {
   font-size: 1.2rem;
   font-weight: 300;
   color: #b2b2b2;
 }
 
 @media (max-width: 767px) {
-  main section.hiro h4 {
+  main section.hiro .container h4 {
     font-size: 0.8rem;
   }
+}
+
+main section.hiro .container ul {
+  position: absolute;
+  top: 80px;
+  right: 128px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+
+main section.hiro .container ul li {
+  font-size: 1.4rem;
+}
+
+main section.about {
+  background-color: #0e0a20;
+}
+
+main section.about .container {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+main section.about .container h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  color: #b2b2b2;
+}
+
+main section.about .container .grid-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=main.css.map */
