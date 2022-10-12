@@ -1,7 +1,8 @@
 $colorWhite: white;
 $colorBlack: black;
 $colorRed: #fb0052;
-$colorLight:  #b2b2b2; 
+$colorLight:  #b2b2b2;
+$colorInstagram :  #f12a24; 
 $fontDefult: 'poppins', sans-serif !important;
 $bgColor:  #0e0a20; 
 
@@ -38,6 +39,10 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .nav-togle{
+        display: none;
+    }
    
     .navbar{
         list-style: none;
@@ -52,6 +57,17 @@ header{
             display: none;
         }
     }
+
+    @media(max-width:767px){
+        .nav-togle{
+            display: block;
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            cursor: pointer;
+        }
+}
+    
     
   }
 
@@ -80,7 +96,7 @@ main{
             z-index: 0;
             // background-color: #12002f;
             background: rgb(20,3,59);
-            background: linear-gradient(90deg, rgba(20, 3, 59, 0.8) 43%, #5b051d 100%);
+            background: linear-gradient(90deg, rgba(20, 3, 59, 0.8) 43%, rgba(44,1,46,1) 100%);
             // background: rgb(20,3,59);
             // background: linear-gradient(90deg, rgba(20,3,59,0.7) 43%, rgba(61,1,7,1) 100%);
             opacity: 0.9;
@@ -99,7 +115,7 @@ main{
                 .are{
                     // font-family: 'Fira-sans', sans-serif !important;
                     color:  $colorRed;
-                    font-size: 3.8rem;
+                    font-size: 3.9rem;
                     font-weight: 700;
                     -webkit-text-stroke: $colorWhite;
                     @media(max-width: 767px){
@@ -110,7 +126,7 @@ main{
                 span{
                     // font-family: 'Fira-sans', sans-serif !important;
                     font-weight: 700;
-                    font-size: 3.8rem;
+                    font-size: 3.9rem;
                     color: $colorWhite;
                     @media(max-width: 767px){
                         font-size: 2.4rem;
@@ -138,7 +154,7 @@ main{
 
                 ul{
                     position: absolute;
-                    top: 80px;
+                    top: 200px;
                     right: 128px;
                     display: flex;
                     flex-direction: column;
@@ -146,6 +162,23 @@ main{
                     list-style: none;
                     li{
                         font-size: 1.4rem;
+                    }
+                    .instagram{
+                        text-shadow: 1px 1px 10px #fc9914;
+                        color: #ff342e;
+                     
+                    }
+                    .twitter{
+                        text-shadow: 1px 1px 10px #03a7ef;
+                        color: #03a7ef;
+                      
+                    }
+                    .telegram{
+                        text-shadow: 1px 1px 10px #1660f3;
+                        color: #1660f3;
+                    }
+                    .facebook{
+                        text-shadow: 1px 1px 10px #0326e7;
                     }
                 }
                
@@ -177,3 +210,4 @@ main{
        
     }
 }
+

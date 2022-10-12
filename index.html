@@ -13,6 +13,8 @@
     <header>
        <div class="container">
            <h2>ZITNCON</h2>
+
+           <div class="nav-togle"><i class="bi bi-toggles"></i></div>
            <nav>
             <ul class="navbar">
                 <li><a href="">Home</a></li>
@@ -33,12 +35,12 @@
                 </h2>
                 <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, laborum?</h4>
 
-                
+               
                 <ul>
-                    <li><i class="bi bi-instagram"></i></li>
-                    <li><i class="bi bi-twitter"></i></li>
-                    <li><i class="bi bi-telegram"></i></li>
-                    <li><i class="bi bi-facebook"></i></li>
+                    <li class="instagram"><i class="bi bi-instagram"></i></li>
+                    <li class="twitter"><i class="bi bi-twitter"></i></li>
+                    <li class="telegram" ><i class="bi bi-telegram"></i></li>
+                    <li class="facebook"><i class="bi bi-facebook"></i></li>
                     
                 </ul>
                
@@ -47,7 +49,7 @@
 
         <section class="about">
             <div class="container">
-                <h2>About</h2>
+                <h2>ABOUT</h2>
                 <div class="grid-2">
                     <div class="about-box">
                         <!-- <h4>Images</h4> -->
@@ -60,5 +62,13 @@
         </section>
 
     </main>
+
+    <script>
+        const navBar = document.querySelector('.navbar')
+        const togle = document.querySelector('.nav-togle')
+        togle.addEventListener('click', ()=>{
+            alert('You Are Happy ??')
+        })
+    </script>
 </body>
 </html>

@@ -44,6 +44,10 @@ header .container {
           align-items: center;
 }
 
+header .container .nav-togle {
+  display: none;
+}
+
 header .container .navbar {
   list-style: none;
   display: -webkit-box;
@@ -61,6 +65,20 @@ header .container .navbar li a {
 @media (max-width: 767px) {
   header .container .navbar {
     display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  header .container .nav-togle {
+    display: block;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    cursor: pointer;
   }
 }
 
@@ -88,8 +106,8 @@ main section.hiro:after {
   bottom: 0;
   z-index: 0;
   background: #14033b;
-  background: -webkit-gradient(linear, left top, right top, color-stop(43%, rgba(20, 3, 59, 0.8)), to(#5b051d));
-  background: linear-gradient(90deg, rgba(20, 3, 59, 0.8) 43%, #5b051d 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(43%, rgba(20, 3, 59, 0.8)), to(#2c012e));
+  background: linear-gradient(90deg, rgba(20, 3, 59, 0.8) 43%, #2c012e 100%);
   opacity: 0.9;
 }
 
@@ -108,7 +126,7 @@ main section.hiro .container h2 {
 
 main section.hiro .container h2 .are {
   color: #fb0052;
-  font-size: 3.8rem;
+  font-size: 3.9rem;
   font-weight: 700;
   -webkit-text-stroke: white;
 }
@@ -121,7 +139,7 @@ main section.hiro .container h2 .are {
 
 main section.hiro .container h2 span {
   font-weight: 700;
-  font-size: 3.8rem;
+  font-size: 3.9rem;
   color: white;
 }
 
@@ -151,7 +169,7 @@ main section.hiro .container h4 {
 
 main section.hiro .container ul {
   position: absolute;
-  top: 80px;
+  top: 200px;
   right: 128px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -166,6 +184,25 @@ main section.hiro .container ul {
 
 main section.hiro .container ul li {
   font-size: 1.4rem;
+}
+
+main section.hiro .container ul .instagram {
+  text-shadow: 1px 1px 10px #fc9914;
+  color: #ff342e;
+}
+
+main section.hiro .container ul .twitter {
+  text-shadow: 1px 1px 10px #03a7ef;
+  color: #03a7ef;
+}
+
+main section.hiro .container ul .telegram {
+  text-shadow: 1px 1px 10px #1660f3;
+  color: #1660f3;
+}
+
+main section.hiro .container ul .facebook {
+  text-shadow: 1px 1px 10px #0326e7;
 }
 
 main section.about {

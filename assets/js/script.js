@@ -12,6 +12,8 @@ window.onscroll = ()=>{
 } 
 
 
+
+
  window.addEventListener("scroll", navscroll);
 
  function navscroll(){
