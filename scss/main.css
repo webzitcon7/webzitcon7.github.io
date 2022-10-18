@@ -21,7 +21,7 @@
   }
 }
 
-header {
+header .nav {
   color: white;
   position: fixed;
   top: 0;
@@ -54,6 +54,7 @@ header .container .navbar {
   display: -ms-flexbox;
   display: flex;
   gap: 40px;
+  z-index: 2;
 }
 
 header .container .navbar li a {
@@ -66,9 +67,6 @@ header .container .navbar li a {
   header .container .navbar {
     display: none;
   }
-}
-
-@media (max-width: 767px) {
   header .container .nav-togle {
     display: block;
     width: 100%;
@@ -80,6 +78,44 @@ header .container .navbar li a {
             justify-content: end;
     cursor: pointer;
   }
+  header .container .navbar-togle {
+    display: block;
+    background-color: #07060d;
+    position: absolute;
+    top: 75px;
+    left: 100px;
+    right: 100px;
+    margin: 0 auto;
+    border-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-height: 10px;
+    padding: 20px 0;
+    -webkit-transition: 2s ease-in;
+    transition: 2s ease-in;
+  }
+}
+
+header .sticky {
+  background-color: #02040b;
+  /* padding: 0 5px;*/
+  position: fixed;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  z-index: 999;
+  top: 0;
+  width: 100%;
 }
 
 main section.hiro {
@@ -91,9 +127,11 @@ main section.hiro {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("../files/bg/4.png");
-  background-position: center;
-  background-size: cover;
+  background-image: url("../files/bg/darkmodelearn.svg");
+  background-position: top center;
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
 }
 
 main section.hiro:after {
@@ -105,10 +143,6 @@ main section.hiro:after {
   right: 0;
   bottom: 0;
   z-index: 0;
-  background: #14033b;
-  background: -webkit-gradient(linear, left top, right top, color-stop(43%, rgba(20, 3, 59, 0.8)), to(#2c012e));
-  background: linear-gradient(90deg, rgba(20, 3, 59, 0.8) 43%, #2c012e 100%);
-  opacity: 0.9;
 }
 
 main section.hiro .container {
@@ -206,7 +240,7 @@ main section.hiro .container ul .facebook {
 }
 
 main section.about {
-  background-color: #0e0a20;
+  background-color: #07060d;
 }
 
 main section.about .container {
@@ -214,15 +248,116 @@ main section.about .container {
   padding-bottom: 64px;
 }
 
-main section.about .container h2 {
-  text-align: center;
-  font-size: 2.6rem;
+main section.about .container .gaga {
+  max-width: 1600px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  margin: 0 auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   color: #b2b2b2;
+  font-family: "poppins", sans-serif !important;
+  font-size: 1.3rem;
 }
 
-main section.about .container .grid-2 {
+main section.about .container .gaga .about-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+main section.about .container .gaga .about-box .box {
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+  padding-right: 28px;
+  width: 50%;
+}
+
+main section.about .container .gaga .about-box .box-2 {
+  padding-left: 40px;
+  width: 50%;
+}
+
+main section.about .container .gaga .about-box .box-2 .box-box {
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+main section.about .container .gaga .about-box .box-2 .box-box-2 {
+  padding-top: 28px;
+}
+
+main section.timeline {
+  background-color: #07060d;
+}
+
+main section.timeline .container {
+  padding-bottom: 64px;
+}
+
+main section.timeline .container .timeline-judul {
+  color: white;
+}
+
+main section.timeline .container .timeline-judul h2 {
+  font-size: 2rem;
+  font-family: "poppins", sans-serif !important;
+}
+
+main section.timeline .container .box-timeline {
+  padding: 40px 20px;
+  margin-top: 40px;
+  background-color: rgba(74, 71, 71, 0.06);
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main section.timeline .container .box-timeline .box-timeline-materi {
+  color: white;
+  width: 50%;
+  padding-right: 40px;
+}
+
+main section.timeline .container .box-timeline .box-timeline-materi p {
+  margin-top: 20px;
+  color: #b2b2b2;
+}
+
+main section.timeline .container .box-timeline .box-timeline-typography {
+  color: white;
+  width: 100%;
+  padding-right: 40px;
+}
+
+main section.timeline .container .box-timeline .box-timeline-typography p {
+  margin-top: 20px;
+  color: #b2b2b2;
+}
+
+main section.timeline .container .box-timeline .box-timeline-line {
+  color: white;
+  width: 50%;
+}
+
+main section.timeline .container .box-timeline .box-timeline-line .box-line {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main section.timeline .container .box-timeline .box-timeline-line .box-line .box-line-1 {
+  width: 20%;
+  color: #b2b2b2;
+}
+
+main section.timeline .container .box-timeline .box-timeline-line .box-line .box-line-2 {
+  width: 60%;
+}
+
+main section.timeline .container .box-timeline .box-timeline-line .box-line .box-line-3 {
+  width: 20%;
 }
 /*# sourceMappingURL=main.css.map */

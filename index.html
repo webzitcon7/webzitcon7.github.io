@@ -11,20 +11,22 @@
 <body>
 
     <header>
-       <div class="container">
-           <h2>ZITNCON</h2>
+        <nav class="nav">
+            <div class="container">
+                <h2>ZITNCONs</h2>
 
-           <div class="nav-togle"><i class="bi bi-toggles"></i></div>
-           <nav>
-            <ul class="navbar">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">TimeLine</a></li>
-                <li><a href="">Agenda</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
+                <div class="nav-togle"><i class="bi bi-toggles"></i></div>
+                
+                    <ul class="navbar ">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">TimeLine</a></li>
+                        <li><a href="">Agenda</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                
+            </div>
         </nav>
-       </div>
     </header>
     <main>
         <section class="hiro">
@@ -49,15 +51,64 @@
 
         <section class="about">
             <div class="container">
-                <h2>ABOUT</h2>
-                <div class="grid-2">
-                    <div class="about-box">
-                        <!-- <h4>Images</h4> -->
+                
+                <div class="gaga">
+                  <div class="about-box">
+                      <div class="box">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eius sequi, iure vel incidunt quo voluptas accusantium obcaecati magnam harum facilis fugit quas, corporis pariatur nihil ratione ducimus, earum exercitationem?</p>
+                      </div>
+                      <div class="box-2">
+                          <div class="box-box">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sed, id provident,</p>
+                          </div>
+                          <div class="box-box-2">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sed, id provident ppp,</p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="timeline">
+            <div class="container">
+                <div class="timeline-judul">
+                    <h2>Materi yang dipelajari</h2>
+                </div>
+                <div class="box-timeline">
+                    <div class="box-timeline-materi">
+                        <h3>Materi</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias aperiam animi quis vitae vero quia quo ducimus incidunt magnam esse dolorem, corrupti qui repudiandae ea debitis veniam laboriosam ad provident!</p>
                     </div>
-                    <div class="about-box">
-                        <!-- <h3>Keterangan</h3> -->
+                    <div class="box-timeline-line">
+                        <div class="box-line">
+                            <div class="box-line-1">01.</div>
+                            <div class="box-line-2">Intro</div>
+                            <div class="box-line-3">>></div>
+                        </div>
+                        <div class="box-line">
+                            <div class="box-line-1">02.</div>
+                            <div class="box-line-2">Intro</div>
+                            <div class="box-line-3">>></div>
+                        </div>
+                        <div class="box-line">
+                            <div class="box-line-1">03.</div>
+                            <div class="box-line-2">Intro</div>
+                            <div class="box-line-3">>></div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="box-timeline">
+                    <div class="box-timeline-typography">
+                        <h3>TypoGraphy</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias aperiam animi quis vitae vero quia quo ducimus incidunt magnam esse dolorem, corrupti qui repudiandae ea debitis veniam laboriosam ad provident!</p>
                     </div>
                 </div>
+
+                
             </div>
         </section>
 
@@ -67,8 +118,17 @@
         const navBar = document.querySelector('.navbar')
         const togle = document.querySelector('.nav-togle')
         togle.addEventListener('click', ()=>{
-            alert('You Are Happy ??')
+            // alert('You Are Happy ??')
+           navBar.classList.toggle('navbar-togle')
         })
+
+        window.addEventListener("scroll", navscroll);
+
+function navscroll(){
+      let nav = document.querySelector("nav");
+       nav.classList.toggle("sticky", window.scrollY > 90);
+}
+
     </script>
 </body>
-</html>
+</html>w
