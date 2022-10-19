@@ -261,6 +261,9 @@ main{
                 color: $colorLight;
                 font-family: $fontDefult;
                 font-size: 1.3rem;
+                @media(max-width:767px){
+                    border-bottom: none;
+                }
 
                 .about-box{
                     display: flex;
@@ -276,10 +279,12 @@ main{
                         // padding-left: 28px;
                         padding-right: 28px;
                         width: 50%;
+                        text-align: justify;
                         @media(max-width: 767px){
                             padding: 0;
                             width: 100%;
                             border-right: none ;
+                            font-size: 1rem;
                            
                         }   
                     }
@@ -301,9 +306,11 @@ main{
                         .box-box{
                             padding-bottom: 28px;
                              border-bottom: 1px solid $colorBorder; 
+                             
                             .box-nav{
                                 display: flex; 
                                 cursor: pointer;
+                                font-size: 1rem;
                                 &:hover{
                                     color: $colorWhite;
                                 }
@@ -352,9 +359,15 @@ main{
                 color: $colorWhite;
                 width: 100%; 
                 padding-right: 40px;
+                text-align: justify;
                 p{
                     margin-top: 20px;
                     color: $colorLight
+                }
+            }
+            @media(max-width:767px){
+                .box-timeline-typography{
+                    padding-right: 0;
                 }
             }
         }
@@ -379,6 +392,7 @@ main{
                 .box-timeline-materi{
                     color: $colorWhite;
                     width: 50%; 
+                    text-align: justify;
                     padding-right: 40px;
                     p{
                         margin-top: 20px;
