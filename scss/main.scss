@@ -228,8 +228,14 @@ main{
                     .facebook{
                         text-shadow: 1px 1px 10px #0326e7;
                     }
-                }     
+                } 
+                @media(max-width:767px){
+                    .sosmed-{
+                        display: none;
+                    }
+                }  
         }
+
         
     }
 
@@ -258,24 +264,74 @@ main{
 
                 .about-box{
                     display: flex;
+                    font-size: 1.1rem;
+                    @media(max-width:767px){
+                        flex-direction: column;
+                        font-size: 1.1rem;
+                    }
+
                    
                     .box{
                         border-right: 1px solid $colorBorder ;
                         // padding-left: 28px;
                         padding-right: 28px;
                         width: 50%;
-                        
+                        @media(max-width: 767px){
+                            padding: 0;
+                            width: 100%;
+                            border-right: none ;
+                           
+                        }   
                     }
                     .box-2{
                         // border-right: 1px solid $colorBorder ;
                         // padding-left: 28px;
                         padding-left: 40px;
                         width: 50%;
+                        @media(max-width: 767px){
+                            padding: 0;
+                            width: 100%;
+                            margin-top: 20px;
+                            padding-top: 28px;
+                            border-top: 1px solid $colorBorder ;
+
+                            
+                        }
+                      
                         .box-box{
                             padding-bottom: 28px;
-                             border-bottom: 1px solid $colorBorder;   
+                             border-bottom: 1px solid $colorBorder; 
+                            .box-nav{
+                                display: flex; 
+                                cursor: pointer;
+                                &:hover{
+                                    color: $colorWhite;
+                                }
+                                .box-box-about-1{
+                                    width: 90%;
+                                    font-weight: 700;
+                                   
+                                }
+                            }
+                            
+                             .box-box-about-2{
+                                 width: 10%;
+                                 margin-left: 10px;
+                             }
                         }
-                        .box-box-2{
+                        .todo{
+                            display: none;
+                        }
+                        .down{
+                            display: block;
+                            margin-top: 20px;
+                            // transition: all 1s ease-in-out;
+                            animation: growDown 300ms ease-in-out forwards;
+                           p{
+                               font-size: 0.9rem;
+                           }
+                        }
+                        .bb{
                             padding-top: 28px;
                                
                         }
@@ -286,29 +342,40 @@ main{
             
             
         }
- 
-
+        .box-timeline{
+            padding: 40px 20px;
+            margin-top: 40px;
+            background-color: rgba(74, 71, 71, 0.06);
+            border-radius: 15px;
+            display: flex;
+            .box-timeline-typography{
+                color: $colorWhite;
+                width: 100%; 
+                padding-right: 40px;
+                p{
+                    margin-top: 20px;
+                    color: $colorLight
+                }
+            }
+        }
        
     }
 
     section.timeline{
+
         background-color: $bgColor;
+        position: relative;
         .container{
-            // padding-top: 64px;
+            padding-top: 64px;
             padding-bottom: 64px;
-            .timeline-judul{
-                color: $colorWhite;
-                h2{
-                    font-size: 2rem;
-                    font-family: $fontDefult;
-                }
-            }
+
             .box-timeline{
                 padding: 40px 20px;
                 margin-top: 40px;
                 background-color: rgba(74, 71, 71, 0.06);
                 border-radius: 15px;
                 display: flex;
+                
                 .box-timeline-materi{
                     color: $colorWhite;
                     width: 50%; 
@@ -335,6 +402,10 @@ main{
                         border-bottom: 1px solid $colorBorder;
                         padding: 20px 0;
                         display: flex;
+                        cursor: pointer;
+                        &:hover{
+                            border-bottom: 1px solid $colorWhite;
+                        }
                         .box-line-1{
                             width: 20%;
                             color: $colorLight
@@ -348,8 +419,59 @@ main{
                     }
                     
                 }
-            } 
+            }
+            @media(max-width:767px){
+                .box-timeline{
+                    flex-direction: column;
+                    .box-timeline-materi{
+                        width: 100%;
+                        padding: 0;
+                    }
+                    .box-timeline-line{
+                        width: 100%;
+                        margin-top: 20px;
+                    }
+                    .box-timeline-typography{
+                        padding: 0;
+                    }
+                }
+
+            }
         }
+        .modal-overlay{
+            width: 100%;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            position: absolute;
+            background: rgba(0,0,0,0.7);
+            z-index: 999;
+            display: none;
+            justify-content: center;
+            align-items: center;
+
+            .modal{
+                width: 100%;
+                max-width: 650px;
+                height: 400px;
+                background-color: $colorWhite;
+                border-radius: 10px;
+                // transform: scale(0);
+                transition: 1s ease-out;
+            }
+        }
+    }
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
     }
 }
 

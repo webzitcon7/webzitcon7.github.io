@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/main.css">
     <link rel="stylesheet" href="assets/icons/bootstrap-icons.css">
+    <link rel="shortcut icon" href="http://localhost/favicon.ico" type="image/x-icon" >
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+   
     <title>ZitCon7</title>
 </head>
 <body>
@@ -16,15 +19,13 @@
                 <h2>ZITNCONs</h2>
 
                 <div class="nav-togle"><i class="bi bi-toggles"></i></div>
-                
                     <ul class="navbar ">
                         <li><a href="">Home</a></li>
                         <li><a href="">About</a></li>
-                        <li><a href="">TimeLine</a></li>
+                        <!-- <li><a href="">TimeLine</a></li> -->
                         <li><a href="">Agenda</a></li>
                         <li><a href="">Contact</a></li>
                     </ul>
-                
             </div>
         </nav>
     </header>
@@ -38,7 +39,7 @@
                 <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, laborum?</h4>
 
                
-                <ul>
+                <ul class="sosmed-">
                     <li class="instagram"><i class="bi bi-instagram"></i></li>
                     <li class="twitter"><i class="bi bi-twitter"></i></li>
                     <li class="telegram" ><i class="bi bi-telegram"></i></li>
@@ -49,39 +50,16 @@
             </div>
         </section>
 
-        <section class="about">
-            <div class="container">
-                
-                <div class="gaga">
-                  <div class="about-box">
-                      <div class="box">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eius sequi, iure vel incidunt quo voluptas accusantium obcaecati magnam harum facilis fugit quas, corporis pariatur nihil ratione ducimus, earum exercitationem?</p>
-                      </div>
-                      <div class="box-2">
-                          <div class="box-box">
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sed, id provident,</p>
-                          </div>
-                          <div class="box-box-2">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sed, id provident ppp,</p>
-                        </div>
-                      </div>
-                  </div>
-                </div>
-            </div>
-        </section>
-
         <section class="timeline">
             <div class="container">
-                <div class="timeline-judul">
-                    <h2>Materi yang dipelajari</h2>
-                </div>
+                
                 <div class="box-timeline">
                     <div class="box-timeline-materi">
                         <h3>Materi</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias aperiam animi quis vitae vero quia quo ducimus incidunt magnam esse dolorem, corrupti qui repudiandae ea debitis veniam laboriosam ad provident!</p>
                     </div>
                     <div class="box-timeline-line">
-                        <div class="box-line">
+                        <div class="box-line" id="open-modal">
                             <div class="box-line-1">01.</div>
                             <div class="box-line-2">Intro</div>
                             <div class="box-line-3">>></div>
@@ -99,7 +77,54 @@
                     </div>
 
                 </div>
+                
+            </div>
+            <div class="modal-overlay">
+                <div class="modal">
+                    <h3>Modal</h3>
+                </div>
+            </div>
+        </section>
 
+        <section class="about">
+            <div class="container">
+                
+                <div class="gaga">
+                  <div class="about-box">
+                      <div class="box">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eius sequi, iure vel incidunt quo voluptas accusantium obcaecati magnam harum facilis fugit quas, corporis pariatur nihil ratione ducimus, earum exercitationem?</p>
+                      </div>
+                      <div class="box-2">
+                          <div class="box-box"  >
+                              <div class="box-nav">
+                                <div class="box-box-about-1">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                                  </div>
+                                  <div class="box-box-about-2" id="tododown">
+                                    <i class="bi bi-chevron-down"></i>
+                                  </div>
+                              </div>
+                              <div class="todo">
+                                <!-- <h1>Judul Cerita</h1> -->
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat pariatur eius alias cupiditate minima eveniet repellat sit nobis ex nemo.</p>
+                            </div>
+                          </div>
+
+
+                          <div class="box-box bb">
+                            <div class="box-nav">
+                                <div class="box-box-about-1">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                                  </div>
+                                  <div class="box-box-about-2" id="tododown">
+                                    <i class="bi bi-chevron-down"></i>
+                                  </div>
+                              </div>
+                        </div>
+
+                      </div>
+                  </div>
+                </div>
 
                 <div class="box-timeline">
                     <div class="box-timeline-typography">
@@ -108,27 +133,12 @@
                     </div>
                 </div>
 
-                
             </div>
         </section>
-
     </main>
 
-    <script>
-        const navBar = document.querySelector('.navbar')
-        const togle = document.querySelector('.nav-togle')
-        togle.addEventListener('click', ()=>{
-            // alert('You Are Happy ??')
-           navBar.classList.toggle('navbar-togle')
-        })
+ 
 
-        window.addEventListener("scroll", navscroll);
-
-function navscroll(){
-      let nav = document.querySelector("nav");
-       nav.classList.toggle("sticky", window.scrollY > 90);
-}
-
-    </script>
+    <script src="assets/js/script.js"> </script>
 </body>
-</html>w
+</html>
