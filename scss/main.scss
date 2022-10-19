@@ -27,6 +27,7 @@ $colorBorder : rgba(255, 255, 255, 0.06);
 }
 
 header{
+    position: relative;
  .nav{
     color: $colorWhite;
     position: fixed;
@@ -73,12 +74,12 @@ header{
             cursor: pointer;
         }
         .navbar-togle{
-            display: block;
+            
             background-color: $bgColor;
             position: absolute;
-            top:75px;
-            left: 100px;
-            right: 100px;
+            top:95px;
+            left: 50px;
+            right: 50px;
             //width: 100%;
             margin: 0 auto;
             border-radius: 20px;
@@ -90,6 +91,7 @@ header{
             line-height: 10px;
             padding: 20px 0;
             transition: 2s ease-in;
+            z-index: 99;
             
             
         }
@@ -151,7 +153,7 @@ main{
         }
         .container{
             position: relative;
-            z-index: 1;
+            z-index: 0;
             color: $colorWhite;
 
             h2{
@@ -440,6 +442,9 @@ main{
                     .box-timeline-materi{
                         width: 100%;
                         padding: 0;
+                        p{
+                            font-size: 14px;
+                        }
                     }
                     .box-timeline-line{
                         width: 100%;
