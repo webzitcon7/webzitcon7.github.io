@@ -68,6 +68,7 @@ const el = document.querySelector('.bi bi-chevron-down');
 const showDown = ()=>{
 	todoClass.classList.toggle('down');
 	
+	
 }
 todoDown.addEventListener('click',showDown)
 

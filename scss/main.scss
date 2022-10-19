@@ -276,7 +276,7 @@ main{
                     font-size: 1.1rem;
                     @media(max-width:767px){
                         flex-direction: column;
-                        font-size: 1.1rem;
+                        font-size: 14px;
                     }
 
                    
@@ -285,12 +285,13 @@ main{
                         // padding-left: 28px;
                         padding-right: 28px;
                         width: 50%;
+                        font-size: 14px;
                         text-align: justify;
                         @media(max-width: 767px){
                             padding: 0;
                             width: 100%;
                             border-right: none ;
-                            font-size: 1rem;
+                            font-size: 14px;
                            
                         }   
                     }
@@ -316,7 +317,7 @@ main{
                             .box-nav{
                                 display: flex; 
                                 cursor: pointer;
-                                font-size: 1rem;
+                                font-size: 14px;
                                 &:hover{
                                     color: $colorWhite;
                                 }
@@ -341,7 +342,7 @@ main{
                             // transition: all 1s ease-in-out;
                             animation: growDown 300ms ease-in-out forwards;
                            p{
-                               font-size: 0.9rem;
+                               font-size: 12px;
                            }
                         }
                         .bb{
@@ -368,7 +369,9 @@ main{
                 text-align: justify;
                 p{
                     margin-top: 20px;
-                    color: $colorLight
+                    color: $colorLight;
+                    font-size: 14px;
+                    
                 }
             }
             @media(max-width:767px){
@@ -402,7 +405,8 @@ main{
                     padding-right: 40px;
                     p{
                         margin-top: 20px;
-                        color: $colorLight
+                        color: $colorLight;
+                        font-size: 14px;
                     }
                 }
                 .box-timeline-typography{
@@ -417,6 +421,7 @@ main{
                 .box-timeline-line{
                     color: $colorWhite;
                     width: 50%;
+                    font-size: 14px;
                     
                     .box-line{
                         border-bottom: 1px solid $colorBorder;
